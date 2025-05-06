@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Showcase - My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>HTML - The Powerhouse of the Web</h1>
+  <p>HTML unlocks the full potential of modern websites</p>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="fullstack.html">Full Stack</a></li>
+        <li class="nav-item"><a class="nav-link" href="html.html">HTML</a></li>
+        <li class="nav-item"><a class="nav-link" href="css.html">CSS</a></li>
+        <li class="nav-item"><a class="nav-link" href="bootstrap.html">Bootstrap</a></li>
+        <li class="nav-item"><a class="nav-link" href="javascript.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container my-5">
+  <h2 class="section-title">The Power of HTML5</h2>
+  <p class="text-center">Crafting seamless, accessible, and interactive digital spaces with the power of HTML5. From dynamic multimedia integration to responsive design and semantic structure, I leverage its capabilities to build engaging, future-proof web applications.</p>
+
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Basic Structure & Metadata</h5>
+          <pre><code><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A powerful HTML5 site">
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>Welcome</h1>
+  </body>
+</html>
+</code></pre>
+          <p>HTML’s doctype and metadata ensure compatibility and search engine optimization.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Semantic Elements</h5>
+          <pre><code><header>Site Header</header>
+<nav>Navigation</nav>
+<main>Main Content</main>
+<section>Section</section>
+<article>Article</article>
+<aside>Sidebar</aside>
+<footer>Footer</footer>
+</code></pre>
+          <p>Leveraging semantic HTML to boost accessibility, improve SEO, and maintain clean, intuitive code. Every tag serves a purpose—ensuring clarity for both users and search engines.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4 mt-4">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Advanced Forms</h5>
+          <pre><code><form action="/submit" method="post">
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  <label for="date">Date:</label>
+  <input type="date" id="date" name="date">
+  <input type="submit" value="Submit">
+</form>
+</code></pre>
+          <p>HTML forms support new input types like email, date, and validation attributes.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Multimedia Embedding</h5>
+          <div class="ratio ratio-16x9">
+            <video class="w-100" controls>
+              <source src="video.mp4" type="video/mp4">
+              Fallback text
+            </video>
+          </div>
+          <p>Native <code>video</code> and <code>audio</code> elements eliminate plugin dependency.</p>
+        </div>
+      </div>
+    </div>
+    
+
+  <div class="row g-4 mt-4">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Canvas for Graphics</h5>
+          <pre><code><canvas id="myCanvas" width="200" height="100"></canvas>
+<script>
+  const ctx = document.getElementById('myCanvas').getContext('2d');
+  ctx.fillStyle = 'red';
+  ctx.fillRect(20, 20, 160, 60);
+</script>
+</code></pre>
+          <p>The <code>canvas</code> element enables dynamic 2D and 3D graphics rendering.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Data Attributes</h5>
+          <pre><code><div data-product-id="101" data-category="tech">
+  Product Info
+</div>
+<script>
+  const item = document.querySelector('[data-product-id="101"]');
+  console.log(item.dataset.category);
+</script>
+</code></pre>
+          <p>Custom data attributes store metadata for dynamic scripting.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4 mt-4">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Accessibility with ARIA</h5>
+          <pre><code><button aria-label="Close dialog">X</button>
+<div role="alert" aria-live="polite">
+  Success: Form submitted
+</div>
+</code></pre>
+          <p>ARIA attributes make websites inclusive for assistive technologies.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Inline SVG Graphics</h5>
+          <pre><code><svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" fill="blue" />
+</svg>
+</code></pre>
+          <p>Scalable Vector Graphics (SVG) provide resolution-independent visuals.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4 mt-4">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Drag and Drop API</h5>
+          <pre><code><div draggable="true" ondragstart="event.dataTransfer.setData('text', 'Dragged!')">
+  Drag Me
+</div>
+<div ondrop="event.target.innerText = event.dataTransfer.getData('text')" ondragover="event.preventDefault()">
+  Drop Zone
+</div>
+</code></pre>
+          <p>HTML5’s drag-and-drop API enables intuitive user interactions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2025 My Full Stack Portfolio</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

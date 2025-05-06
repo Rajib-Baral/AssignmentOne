@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Framework - My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Bootstrap - Rapid Web Design</h1>
+  <p>Build beautiful, responsive websites quickly with Bootstrap 5</p>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="fullstack.html">Full Stack</a></li>
+        <li class="nav-item"><a class="nav-link" href="html.html">HTML</a></li>
+        <li class="nav-item"><a class="nav-link" href="css.html">CSS</a></li>
+        <li class="nav-item"><a class="nav-link" href="bootstrap.html">Bootstrap</a></li>
+        <li class="nav-item"><a class="nav-link" href="javascript.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container my-5">
+
+  <h2 class="section-title">Introduction to Bootstrap</h2>
+  <p class="text-center">I use Bootstrap as a front-end framework to build modern, mobile-first websites efficiently.</p>
+
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Bootstrap Buttons</h5>
+          <p>Bootstrap comes with pre-styled button classes:</p>
+          <div class="d-flex gap-2 flex-wrap mb-3">
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-secondary">Secondary</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-danger">Danger</button>
+            <button class="btn btn-warning">Warning</button>
+          </div>
+          <pre><code><button class="btn btn-primary">Primary</button></code></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Grid System</h5>
+          <p>Bootstrap’s grid system uses a series of containers, rows, and columns:</p>
+          <div class="row">
+            <div class="col-md-6 bg-light p-2">Column 1</div>
+            <div class="col-md-6 bg-light p-2">Column 2</div>
+          </div>
+          <pre class="mt-3"><code><div class="row">
+  <div class="col-md-6">Column 1</div>
+  <div class="col-md-6">Column 2</div>
+</div></code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4 mt-4">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Alerts</h5>
+          <p>Alerts are used to quickly grab user attention:</p>
+          <div class="alert alert-success" role="alert">
+            This is a success alert!
+          </div>
+          <div class="alert alert-danger" role="alert">
+            This is a danger alert!
+          </div>
+          <pre><code><div class="alert alert-success">Success!</div></code></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Cards</h5>
+          <p>Cards are flexible containers for content:</p>
+          <div class="card" style="width: 18rem;">
+            <img src="https://via.placeholder.com/286x180" class="card-img-top" alt="Placeholder image">
+            <div class="card-body">
+              <h5 class="card-title">Sample Card</h5>
+              <p class="card-text">This is a Bootstrap card with an image, title, and text content.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+          <pre><code><div class="card">...</div></code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4 mt-4">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Responsive Form</h5>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+          <pre class="mt-3"><code><form>...</form></code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4 mt-4">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Collapsible Accordion</h5>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Section 1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  This is the first section's content. Click to collapse!
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Section 2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  This is the second section's content.
+                </div>
+              </div>
+            </div>
+          </div>
+          <pre><code><div class="accordion" id="accordionExample">...</div></code></pre>
+          <p>This accordion allows users to expand/collapse content sections efficiently.</p>
+        </div>
+      </div>
+    </div>
+
+  <div class="row g-4 mt-4">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Responsive Navbar with Dropdown</h5>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Portfolio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Projects
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Project 1</a></li>
+                      <li><a class="dropdown-item" href="#">Project 2</a></li>
+                      <li><a class="dropdown-item" href="#">Project 3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <pre><code><nav class="navbar navbar-expand-lg navbar-dark">...</nav></code></pre>
+          <p>This responsive navbar includes a dropdown menu that works on all devices.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2025 My Full Stack Portfolio</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
